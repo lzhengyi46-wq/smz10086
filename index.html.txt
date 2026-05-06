@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>短信认证</title>
+</head>
+
+<body style="text-align:center;padding-top:120px;font-size:18px;">
+
+<p>点击下方按钮完成实名认证</p >
+
+<button style="font-size:20px;padding:12px 24px;" onclick="sendSMS()">
+发送短信到10086
+</button>
+
+<p id="tip" style="margin-top:20px;color:red;"></p >
+
+<script>
+function isWeChat() {
+  return /MicroMessenger/i.test(navigator.userAgent);
+}
+
+function sendSMS(){
+  if(isWeChat()){
+    document.getElementById("tip").innerHTML = "请点击右上角 ··· 用浏览器打开";
+    return;
+  }
+
+  window.location.href = "sms:10086?body=SMZ%20实名认证";
+}
+</script>
+
+</body>
+</html>
