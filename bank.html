@@ -1,11 +1,81 @@
-<a class="back" href=" ">← 返回首页</a >
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>银行服务</h2>
+<title>银行服务</title>
 
-<button class="btn" onclick="location.href='sms:95588?body=khh#'">
-查询开户行
-</button>
+<style>
 
-<button class="btn" onclick="location.href='sms:95588?body=qxye#'">
-取消短信服务
-</button>
+body{
+    margin:0;
+    padding:30px 20px;
+    background:#f5f7fa;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}
+
+.back{
+    display:inline-block;
+    margin-bottom:30px;
+    font-size:22px;
+    color:#007AFF;
+    text-decoration:none;
+}
+
+.title{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:40px;
+    color:#111;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+    background:white;
+    padding:28px 24px;
+    margin-bottom:24px;
+    border-radius:22px;
+    font-size:30px;
+    font-weight:600;
+    color:#111;
+    text-decoration:none;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.tip{
+    margin-top:40px;
+    font-size:22px;
+    color:#666;
+    line-height:1.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<a class="back" href=" ">
+← 返回首页
+</a >
+
+<div class="title">
+银行服务
+</div>
+
+<a class="btn" href="sms:95588?body=khh#">
+🏦 查询开户行
+</a >
+
+<a class="btn" href="sms:95588?body=qxye#">
+💳 取消短信服务
+</a >
+
+<div class="tip">
+点击对应按钮后会自动打开短信页面
+</div>
+
+</body>
+</html>
